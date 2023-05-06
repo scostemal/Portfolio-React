@@ -1,4 +1,20 @@
-import React from 'react';
+function opentab(tabName: string) {
+  // Get all tab content elements and hide them
+  const tabContents = document.querySelectorAll('.tab-contents') as NodeListOf<HTMLElement>;
+  tabContents.forEach(tabContent => tabContent.classList.remove('active-tab'));
+
+  // Get all tab links and remove the active class
+  const tabLinks = document.querySelectorAll('.tab-links') as NodeListOf<HTMLElement>;
+  tabLinks.forEach(tabLink => tabLink.classList.remove('active-link'));
+
+  // Show the specific tab content
+  const activeTab = document.getElementById(tabName) as HTMLElement;
+  activeTab.classList.add('active-tab');
+
+  // Add the active class to the button that opened the tab
+  const activeLink = document.querySelector(`[data-tab="${tabName}"]`) as HTMLElement;
+  activeLink.classList.add('active-link');
+}
 
 
 function About() {
