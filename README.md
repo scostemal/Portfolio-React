@@ -10,4 +10,4 @@ This is a screen show of the application.
 
 ## Deployment
 
-You can view the deployed application via GitHub pages here: [link](https://scostemal.github.io/)
+You can view the deployed application via GitHub pages here: [link](https://scostemal.github.io/Portfolio-React)
